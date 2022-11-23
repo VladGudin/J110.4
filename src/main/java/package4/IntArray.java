@@ -31,6 +31,9 @@ public class IntArray implements ArrayInterface{
         ints[indexElement]= ints[indexElement] ^ mask;
         return false;
     }
+
+
+
     @Override
     public int hasTrue() {// метод для подсчета true
         int count = 0;
