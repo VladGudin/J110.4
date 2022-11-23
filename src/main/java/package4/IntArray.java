@@ -33,7 +33,7 @@ public class IntArray implements ArrayInterface{
     }
 
     @Override
-    public int hasTrue() {// метод для подсчета true/ не работает
+    public int hasTrue() {// метод для подсчета true
         int count = 0;
         String[] lines1 = new String[sizeArray];
         for (int i=0; i<sizeArray; i++){
