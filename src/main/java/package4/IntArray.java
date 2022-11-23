@@ -16,7 +16,7 @@ public class IntArray implements ArrayInterface{
     }
     @Override
     public void setTrue(int Index) {
-        if (Index<0 || Index >=sizeArray );
+        if (Index>=0 || Index <sizeArray );
         int indexElement = Index/32;
         int indexBit = Index%32;
         int mask = 1<<indexBit;// Смещение
@@ -35,12 +35,15 @@ public class IntArray implements ArrayInterface{
     @Override
     public int hasTrue() {// метод для подсчета true/ не работает
         int count = 0;
-        for (int b: ints) {
-            if (b>0)
+        String[] lines1 = new String[sizeArray];
+        for (int i=0; i<sizeArray; i++){
+            lines1[i] = Objects.toString( getByIndex(i)? 1:0);
+            if (getByIndex(i) == true)
                 ++count;
         }
         return count;
     }
+
 
     @Override
     public void setFalse(int Index) {
