@@ -1,6 +1,5 @@
 package package4;
-import java.util.Arrays;
-import java.util.Objects;
+
 public class Main {
     public static void main(String[] args){
         ArrayInterface array1 = new BooleanArray();
@@ -8,6 +7,7 @@ public class Main {
         array1.setTrue(3);
         array1.setTrue(4);
         array1.setTrue(5);
+        array1.setTrue(6);
 
         array1.setFalse(3);
         System.out.println(array1.getByIndex(3));
